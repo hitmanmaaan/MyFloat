@@ -55,12 +55,6 @@ build CMakeFiles/Zadanie1.dir/main.cpp.o: CXX_COMPILER__Zadanie1_unscanned_Debug
   OBJECT_DIR = CMakeFiles/Zadanie1.dir
   OBJECT_FILE_DIR = CMakeFiles/Zadanie1.dir
 
-build CMakeFiles/Zadanie1.dir/division.cpp.o: CXX_COMPILER__Zadanie1_unscanned_Debug /Users/egorlevchuk/CLionProjects/Zadanie1/division.cpp || cmake_object_order_depends_target_Zadanie1
-  DEP_FILE = CMakeFiles/Zadanie1.dir/division.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/Zadanie1.dir
-  OBJECT_FILE_DIR = CMakeFiles/Zadanie1.dir
-
 build CMakeFiles/Zadanie1.dir/myfloat.cpp.o: CXX_COMPILER__Zadanie1_unscanned_Debug /Users/egorlevchuk/CLionProjects/Zadanie1/myfloat.cpp || cmake_object_order_depends_target_Zadanie1
   DEP_FILE = CMakeFiles/Zadanie1.dir/myfloat.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
@@ -75,7 +69,7 @@ build CMakeFiles/Zadanie1.dir/myfloat.cpp.o: CXX_COMPILER__Zadanie1_unscanned_De
 #############################################
 # Link the executable Zadanie1
 
-build Zadanie1: CXX_EXECUTABLE_LINKER__Zadanie1_Debug CMakeFiles/Zadanie1.dir/main.cpp.o CMakeFiles/Zadanie1.dir/division.cpp.o CMakeFiles/Zadanie1.dir/myfloat.cpp.o
+build Zadanie1: CXX_EXECUTABLE_LINKER__Zadanie1_Debug CMakeFiles/Zadanie1.dir/main.cpp.o CMakeFiles/Zadanie1.dir/myfloat.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk
   OBJECT_DIR = CMakeFiles/Zadanie1.dir
   POST_BUILD = :

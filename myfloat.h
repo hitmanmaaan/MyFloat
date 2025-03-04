@@ -1,6 +1,6 @@
 #pragma once
-#ifndef MYFLOAT_H
-#define MYFLOAT_H
+//#ifndef MYFLOAT_H
+//#define MYFLOAT_H
 
 #include <iostream>
 
@@ -20,8 +20,9 @@ public:
     MyFloat operator+(const MyFloat& other) const;
     MyFloat operator-(const MyFloat& other) const;
     MyFloat operator*(const MyFloat& other) const;
-
     MyFloat operator/(const MyFloat& other) const;
+
+    void print() const;
 };
 
-#endif
+//#endif

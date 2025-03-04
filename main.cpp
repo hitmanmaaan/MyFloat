@@ -3,17 +3,16 @@
 
 int main() {
     MyFloat a(3.141);
-    MyFloat b(1.234);
-
-    std::cout << "Сложение: " << (a + b) << std::endl;
-    std::cout << "Вычитание: " << (a - b) << std::endl;
-    std::cout << "Умножение: " << (a * b) << std::endl;
-
-    try {
-        std::cout << "Деление: " << (a / b) << std::endl;
-    } catch (const std::runtime_error& e) {
-        std::cout << "Ошибка: " << e.what() << std::endl;
-    }
-
+    MyFloat b(3.252);
+    a.print();
+    b.print();
+    printf("Сложение: ");
+    (a+b).print();
+    printf("Вычитание: ");
+    (a-b).print();
+    printf("Умножение: ");
+    (a*b).print();
+    printf("Деление: ");
+    (a/b).print();
     return 0;
 }
