@@ -1,5 +1,6 @@
 #include "myfloat.h"
 #include <cmath>
+#include <iomanip>
 
 MyFloat::MyFloat(double num) {
     whole = static_cast<int>(num);
@@ -25,11 +26,11 @@ double MyFloat::toDouble() const {
     return whole + frac / 1000.0;
 }
 
-// // Перегрузка оператора вывода
-// std::ostream& operator<<(std::ostream& os, const MyFloat& num) {
-//     os << std::fixed << std::setprecision(3) << num.toDouble();
-//     return os;
-// }
+// Перегрузка оператора вывода
+std::ostream& operator<<(std::ostream& os, const MyFloat& num) {
+    os << std::fixed << std::setprecision(3) << num.toDouble();
+    return os;
+}
 // ???? printf
 
 MyFloat MyFloat::operator+(const MyFloat& other) const {

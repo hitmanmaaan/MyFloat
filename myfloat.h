@@ -5,13 +5,13 @@
 #include <iostream>
 
 class MyFloat {
-private:
+protected:
     int whole;
     int frac;
     void normalize();
 
 public:
-
+    MyFloat() : whole(0), frac(0) {}
     MyFloat(double num);
     MyFloat(int w, int f);
     double toDouble() const;
@@ -23,6 +23,13 @@ public:
     MyFloat operator/(const MyFloat& other) const;
 
     void print() const;
+
+    int getWhole() const { return whole; }
+    int getFrac() const { return frac; }
+    void setWhole(int w) { whole = w; }
+    void setFrac(int f) { frac = f; }
+
+
 };
 
 //#endif
